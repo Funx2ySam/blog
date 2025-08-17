@@ -1,0 +1,80 @@
+baseURL: 'https://blog.funx2i.com/'
+languageCode: 'zh-cn'
+title: 'Kita Blog'
+theme: 'PaperMod'
+
+pagination:
+  pagerSize: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 菜单示例
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 2
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 3
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 3
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 4
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 主题参数
+params:
+  assets:
+    favicon: '/favicon.ico'
+  ShowToc: true
+  TocOpen: true # 默认展开目录
+  defaultTheme: auto # auto, dark, light
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  comments: false
+  images: ['papermod-cover.png']
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 2
+    keys: ['title', 'summary', 'content', 'permalink']
+
+  homeInfoParams:
+    Title: 'Welcome'
+    Content: >
+      这里是 Kita 博客。
+
+  socialIcons:
+    - name: github
+      url: 'https://github.com/Funx2ySam'
+    # - name: twitter
+    #   url: 'https://twitter.com/你的Twitter用户名'
+    - name: rss
+      url: 'index.xml'
