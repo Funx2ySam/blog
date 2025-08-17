@@ -1,6 +1,6 @@
 ---
 title: "Hytron-HK-EQHK2-6-Server 测试留档"
-date: 2025-08-17T19:500:00+08:00
+date: 2025-08-17T19:50:00+08:00
 draft: false
 tags: ["VPS","留档"]
 ---
